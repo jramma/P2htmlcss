@@ -1,0 +1,76 @@
+#home {
+  background-image: url("../img/home-hero.jpg");
+  background-size: cover;
+  /* cover: que ocupe toda la pantalla */
+  text-align: center;
+}
+html {
+  color: #fff;
+  font-family: "Fira Sans", sans-serif;
+}
+/* Fira Sans de Google Fonts (weight 300,500,700 i 900). */
+
+/* Cabecera */
+.nav_in {
+  text-align: center; /* Centra el contenido del .nav_in horizontalmente */
+  padding: 2rem;
+}
+
+.nav_in ul {
+  list-style: none;
+  padding: 2rem;
+  background-color: #070e5886;
+  display: inline-block; /* Cambiamos a display: inline-block para centrar el ul */
+}
+
+.nav_in li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+.nav_in a {
+  text-transform: uppercase;
+  padding: 10px 20px;
+
+}
+/* Cuerpo */
+#home img {
+  max-width: 40%;
+}
+#home h1 {
+  font-size: 5rem;
+  max-width: 70%;
+  display: inline-block;
+  font-weight: bold;
+}
+/* Pie de página */
+
+.nav_out ul {
+  list-style: none;
+  padding: 0;
+  display: inline-block; /* Cambiamos a display: inline-block para centrar el ul */
+}
+
+.nav_out li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+.nav_out a{
+    padding: 10px 20px;
+
+}
+#a_foot {
+  color: #a4f479;
+}
+
+/* GENERAL */
+
+a:hover {
+  color: #5865f2;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
