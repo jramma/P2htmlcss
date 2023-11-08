@@ -102,6 +102,21 @@ html {
   text-align: center;
 
 }
+#cabezas_de_cartel{
+  width: 70%;
+  display: inline-block;
+  text-align: left;
+}
+#cabezas_de_cartel h3{
+  margin-left: 4rem;
+}
+.left_line{
+  margin-left: 4rem;
+  border-left: 2px solid #070e58;
+  padding-left: 2rem;
+
+}
+
 /* Pie de página */
 
 .nav_out ul {
@@ -136,7 +151,7 @@ h3{
 a:hover {
   color: #5865f2;
 }
-a {
+a{
   text-decoration: none;
   color: #fff;
 }
@@ -144,8 +159,21 @@ body {
   margin: 0;
 }
 #postfoto{
+  margin-top: 0;
   font-size: 0.8rem;
   font-weight: 300;
   text-align: left;
+}
+#postfoto p{
+  margin-top: 0;
+  font-size: 0.7rem;
+}
+#box_video{
+  width:560; 
   display: inline-block;
+}
+p{
+  font-weight: 300;
+  line-height: 1.5;
+
 }
