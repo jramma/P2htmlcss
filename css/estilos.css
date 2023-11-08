@@ -2,6 +2,8 @@
   background-image: url("../img/home-hero.jpg");
   background-size: cover;
   /* cover: que ocupe toda la pantalla */
+  background-position: center top -16rem; /* Desplaza la imagen 5 rem hacia arriba desde la parte superior */
+
   text-align: center;
 }
 html {
@@ -13,7 +15,12 @@ html {
 /* Cabecera */
 .nav_in {
   text-align: center; /* Centra el contenido del .nav_in horizontalmente */
-  padding: 2rem;
+  padding: 0rem;
+  margin-bottom: 3rem;
+}
+#whoami{
+    color: #a4f479;
+    border-bottom: 2px solid #a4f479; /* Establece el subrayado como un borde inferior */
 }
 
 .nav_in ul {
@@ -32,8 +39,45 @@ html {
 .nav_in a {
   text-transform: uppercase;
   padding: 10px 20px;
+  margin: 1rem;
+}
+
+.nav_on {
+  margin: 0;
+  background-image: url("../img/amped_header.jpg");
+  background-position: center top -16rem; /* Desplaza la imagen 5 rem hacia arriba desde la parte superior */
 
 }
+.nav_on {
+  text-align: center; /* Centra el contenido del .nav_in horizontalmente */
+  padding: 0rem;
+  margin-bottom: 3rem;
+}
+.nav_on div{
+    background-color: #070e5886;
+    width: 45%;
+    display: inline-block;
+    height: 10rem;
+    margin: 1rem;
+}
+.nav_on ul {
+  list-style: none;
+  display: inline-block; /* Cambiamos a display: inline-block para centrar el ul */
+}
+.nav_on li {
+  display: inline;
+  margin: 0;
+  padding: 10px 20px;
+}
+.nav_on a {
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+}
+#logo{
+    width: 40% ;
+    margin-top: 1rem;
+}
+
 /* Cuerpo */
 #home img {
   max-width: 40%;
@@ -43,6 +87,20 @@ html {
   max-width: 70%;
   display: inline-block;
   font-weight: bold;
+}
+#intro_info{
+  max-width: 560px;
+  line-height: 1.5;
+  text-align: left;
+  display: inline-block;
+  font-weight: 300;
+  margin-bottom: 2rem;
+
+}
+.cuerpo {
+  color: #070e58;
+  text-align: center;
+
 }
 /* Pie de página */
 
@@ -57,20 +115,37 @@ html {
   margin: 0;
   padding: 0;
 }
-.nav_out a{
-    padding: 10px 20px;
-
+.nav_out a {
+  padding: 10px 20px;
 }
 #a_foot {
   color: #a4f479;
 }
+#a_foot:hover {
+  color: #5865f2;
+}
+#foot_p {
+  font-size: 0.9rem;
+}
 
 /* GENERAL */
 
+h3{
+  font-weight: 700;
+}
 a:hover {
   color: #5865f2;
 }
 a {
   text-decoration: none;
   color: #fff;
+}
+body {
+  margin: 0;
+}
+#postfoto{
+  font-size: 0.8rem;
+  font-weight: 300;
+  text-align: left;
+  display: inline-block;
 }

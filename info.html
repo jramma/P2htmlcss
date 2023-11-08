@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <link rel="icon" type="image/png" href="img/favicon-32x32.png" />
+    <link rel="icon" type="image/png" src="../img/favicon-32x32.png" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>Info</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,23 +14,86 @@
     />
     <link rel="stylesheet" href="css/estilos.css" />
   </head>
-  <body id="home">
+
+  <body>
     <header>
-      <nav class="nav_in">
-        <ul>
-          <li><a href="info.html"> Información </a></li>
-          <li><a class="sans-serif" href="calendario.html"> Calendario </a></li>
-          <li><a class="sans-serif" href="tickets.html"> Entradas </a></li>
-        </ul>
+      <nav class="nav_on">
+        <div>
+          <img id="logo" src="img/logo.svg" />
+          <ul>
+            <li><a href="info.html" id="whoami"> Información </a></li>
+            <li>
+              <a class="sans-serif" href="calendario.html"> Calendario </a>
+            </li>
+            <li><a class="sans-serif" href="tickets.html"> Entradas </a></li>
+          </ul>
+        </div>
       </nav>
     </header>
-    <main>
+    <main class="cuerpo">
       <div>
-        <img src="img/logo.svg" />
-        <div>Amped festival</div>
-      </div>
-      <div>
-        <h1>Siente el pulso del rock en Amped Festival</h1>
+        <h2>Información y grupos</h2>
+        <p id="intro_info">
+          El Amped Festival celebra la esencia y evolución del rock, reuniendo a
+          los mejores talentos del género. Desde sus humildes inicios en 2018,
+          ha crecido exponencialmente, convirtiéndose en un evento anual
+          esperado por fanáticos y artistas por igual.
+        </p>
+        <div>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/0r2vRoy0GTk?si=fnMemweR-0Kg3Tyw"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <div>
+          <p id="postfoto">Resumen Amped Festival 2023</p></div>
+        </div>
+        <div>
+          <h2>Cabezas de cartel</h2>
+          <p>
+            Cada año, el Amped Festival se enorgullece de presentar a una
+            selección ecléctica de artistas y bandas. Desde iconos del rock
+            clásico hasta prometedores talentos emergentes, el festival
+            garantiza dos días de música ininterrumpida.
+          </p>
+          <h3>Los Rayos</h3>
+          <div>
+            Género: Hard RockDescripción: Pioneros del hard rock, Los Rayos son
+            conocidos por su energía eléctrica en el escenario y su habilidad
+            para hacer vibrar a la audiencia con sus riffs potentes y letras
+            apasionadas.
+          </div>
+          <h3>Sirenas Eléctricas</h3>
+
+          Género: Punk RockDescripción: Una banda femenina de punk rock que ha
+          tomado la escena por asalto. Con letras poderosas y ritmos
+          contagiosos, las Sirenas Eléctricas son una fuerza a tener en cuenta
+          en el mundo del rock.
+
+          <h3>The Echoes</h3>
+          <div>
+            Género: Classic RockDescripción: Reverenciando los sonidos clásicos
+            de la era dorada del rock, The Echoes combinan magistralmente
+            guitarras vintage con vocales armoniosas.
+          </div>
+          <h3>StrumLords</h3>
+          <div>
+            Género: Indie RockDescripción: Una mezcla refrescante de sonidos
+            indie con una pizca de folk, StrumLords ofrece una experiencia
+            auditiva relajante con su música acústica y letras poéticas.
+          </div>
+          <h3>Guitar Glare</h3>
+          <div>
+            Género: Rock ‘n’ RollDescripción: Manteniéndolo clásico con un toque
+            moderno, Guitar Glare rinde homenaje al rock 'n' roll tradicional
+            mientras introduce elementos contemporáneos.
+          </div>
+          <!-- Lista -->
+        </div>
       </div>
     </main>
     <footer>
