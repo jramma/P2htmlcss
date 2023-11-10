@@ -242,3 +242,32 @@ h4 {
 p{
   text-align: left;
 }
+
+/* cuadricula----------------------- */
+#calendario{
+  display: inline-block;
+}
+.cuadricula {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.columna {
+  text-align: left;
+}
+.cuadricula a{
+  color: #5865f2;
+}
+.green{
+  background-color: #a4f479;
+}
+.cuadricula p{
+  margin: 0;
+}
+.item{
+  padding: 0.5rem;
+}
+.head{
+  border-top: 1px solid #070e58;
+  border-bottom: 1px solid #070e58 ;
+}
