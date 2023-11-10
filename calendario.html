@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <link rel="icon" type="image/png" href="img/favicon-32x32.png" />
+    <link rel="icon" type="image/png" src="../img/favicon-32x32.png" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Info</title>
+    <title>Calendario</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,31 +14,66 @@
     />
     <link rel="stylesheet" href="css/estilos.css" />
   </head>
+
   <body>
     <header>
-      <nav class="head">
-        <ul>
-          <li><a href="info.html"> Información </a></li>
-          <li><a class="sans-serif" href="calendario.html"> Calendario </a></li>
-          <li><a class="sans-serif" href="tickets.html"> Entradas </a></li>
-        </ul>
-      </nav>
+      <div>
+        <nav class="nav_on">
+          <div id="purple_nav">
+            <img id="logo" src="img/logo.svg" />
+            <div id="center">
+              <ul>
+                <li><a href="info.html"> Información </a></li>
+                <li>
+                  <a class="sans-serif" id="whoami" href="calendario.html">
+                    Calendario
+                  </a>
+                </li>
+                <li>
+                  <a class="sans-serif" href="tickets.html"> Entradas </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
-    <main>
-     
+    <main class="cuerpo contenedor">
+      <div>
+        <div class="item">
+          <h2>Calendario de conciertos</h2>
+          <p class="intro_info">
+            El Amped Festival no es sólo sobre la música, es sobre la
+            experiencia. Con dos días llenos de actuaciones increíbles, queremos
+            que estés bien preparado. Aquí tienes el calendario completo para
+            que no te pierdas de ninguno de tus artistas favoritos.
+          </p>
+        </div>
+        <div class="item">
+          <div id="calendario item">
+            <div id="postfoto">
+              <p>
+                * Los horarios pueden estar sujetos a cambios. Para obtener la
+                información más actualizada suscríbete a nuestras
+                notificaciones.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
-    <footer>
-      <nav class="foot">
-        <ul>
-          <li><a href="#"> Aviso legal </a></li>
-          <li><a class="sans-serif" href="#"> Política de privacidad </a></li>
-          <li><a class="sans-serif" href="#"> Política de cookies </a></li>
-        </ul>
-      </nav>
-      <p>
-        2023 © Jose Ramos Masip. Foto creada por
-        <a href="https://www.midjourney.com/home">Midjurney</a>
-      </p>
+    <br /><br />
+    <footer class="footer_purple">
+      <div>
+        <nav>
+          <ul>
+            <li><a href="#"> Aviso legal </a></li>
+            <li><a class="sans-serif" href="#"> Política de privacidad </a></li>
+            <li><a class="sans-serif" href="#"> Política de cookies </a></li>
+          </ul>
+        </nav>
+        <p>2023 © Jose Ramos Masip.</p>
+      </div>
     </footer>
   </body>
 </html>
