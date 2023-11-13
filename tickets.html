@@ -51,63 +51,44 @@
       </div>
       <div class="item">
         <form action="submit.php" method="post">
-          <div class="form_div">
-            <h4>Información personal</h4>
-            <input type="text" name="nombre" placeholder="Nombre" />
-            <input type="text" name="apellidos" placeholder="Apellidos" />
-            <input
-              type="email"
-              name="correo_electronico"
-              placeholder="Correo electrónico"
-            />
-            <input type="tel" name="telefono" placeholder="Teléfono" />
-            <input
-              type="date"
-              name="fecha_nacimiento"
-              placeholder="Fecha de nacimiento"
-            />
+          <div class="form_div1">
+            <h4>Información Personal</h4>
+            <div class="flex">
+              <div class="row">
+                <div>
+                  <p>Nombre: *</p>
+                  <input type="text" name="nombre" placeholder="Nombre" />
+                </div>
+                <div>
+                  <p>Correo Electrónico: *</p>
+                  <input type="text" name="apellidos" placeholder="Apellidos" />
+                </div>
+                <div>
+                  <p>Fecha de Nacimiento: *</p>
+                  <input
+                    type="email"
+                    name="correo_electronico"
+                    placeholder="Correo electrónico"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div>
+                  <p>Apellidos: *</p>
+                  <input type="tel" name="telefono" placeholder="Teléfono" />
+                </div>
+                <div>
+                  <p>Teléfono:</p>
+                  <input
+                    type="date"
+                    name="fecha_nacimiento"
+                    placeholder="Fecha de nacimiento"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="form_div">
-            <h4>Tipo de entrada</h4>
-            <select name="tipo_entrada">
-              <option value="1">Entrada general</option>
-              <option value="2">Entrada VIP</option>
-            </select>
-          </div>
-          <div class="form_div">
-            <h4>Método de pago</h4>
-            <input type="radio" name="metodo_pago" value="paypal" />PayPal
-            <input
-              type="radio"
-              name="metodo_pago"
-              value="tarjeta_credito"
-            />Tarjeta de crédito
-            <input type="radio" name="metodo_pago" value="bizum" />Bizum
-          </div>
-          <div class="form_div">
-            <h4>Información de la tarjeta</h4>
-            <input
-              type="number"
-              name="numero_tarjeta"
-              placeholder="Número de tarjeta"
-            />
-            <input
-              type="date"
-              name="fecha_expiracion"
-              placeholder="Fecha de expiración"
-            />
-            <input type="number" name="cvc" placeholder="CVC" />
-          </div>
-          <div class="form_div">
-            <h4>Dirección de envío</h4>
-            <input type="text" name="poblacion" placeholder="Población" />
-            <input
-              type="number"
-              name="codigo_postal"
-              placeholder="Código postal"
-            />
-            <input type="text" name="pais" placeholder="País" />
-          </div>
+          <br />
           <div id="comentarios">
             <h4>Comentarios o peticiones especiales</h4>
             <textarea
