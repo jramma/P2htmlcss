@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <link rel="icon" type="image/png" href="img/favicon-32x32.png" />
+    <link rel="icon" type="image/png" src="../img/favicon-32x32.png" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>Tickets</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,37 +14,128 @@
     />
     <link rel="stylesheet" href="css/estilos.css" />
   </head>
-  <body id="home">
+
+  <body>
     <header>
-      <nav class="nav_in">
-        <ul>
-          <li><a href="info.html"> Información </a></li>
-          <li><a class="sans-serif" href="calendario.html"> Calendario </a></li>
-          <li><a class="sans-serif" href="tickets.html"> Entradas </a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
       <div>
-        <img src="img/logo.svg" />
-        <div>Amped festival</div>
+        <nav class="nav_on">
+          <div id="purple_nav">
+            <img id="logo" src="img/logo.svg" />
+            <div id="center">
+              <ul>
+                <li><a href="info.html"> Información </a></li>
+                <li>
+                  <a class="sans-serif" href="calendario.html"> Calendario </a>
+                </li>
+                <li>
+                  <a class="sans-serif" id="whoami" href="tickets.html">
+                    Entradas
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </div>
-      <div>
-        <h1>Siente el pulso del rock en Amped Festival</h1>
+    </header>
+    <main class="cuerpo contenedor">
+      <div class="item">
+        <h2 id="calendar_title">Compra tus entradas</h2>
+        <p class="intro_info">
+          Ser parte del Amped Festival es una experiencia que no querrás
+          perderte. Ya sea que desees estar en primera fila o disfrutar del
+          ambiente desde un espacio VIP, tenemos diferentes tipos de entradas
+          para satisfacer tus necesidades. Completa el formulario a continuación
+          para asegurarte de estar presente en este evento musical inigualable.
+        </p>
+      </div>
+      <div class="item">
+        <form action="submit.php" method="post">
+          <div class="form_div">
+            <h4>Información personal</h4>
+            <input type="text" name="nombre" placeholder="Nombre" />
+            <input type="text" name="apellidos" placeholder="Apellidos" />
+            <input
+              type="email"
+              name="correo_electronico"
+              placeholder="Correo electrónico"
+            />
+            <input type="tel" name="telefono" placeholder="Teléfono" />
+            <input
+              type="date"
+              name="fecha_nacimiento"
+              placeholder="Fecha de nacimiento"
+            />
+          </div>
+          <div class="form_div">
+            <h4>Tipo de entrada</h4>
+            <select name="tipo_entrada">
+              <option value="1">Entrada general</option>
+              <option value="2">Entrada VIP</option>
+            </select>
+          </div>
+          <div class="form_div">
+            <h4>Método de pago</h4>
+            <input type="radio" name="metodo_pago" value="paypal" />PayPal
+            <input
+              type="radio"
+              name="metodo_pago"
+              value="tarjeta_credito"
+            />Tarjeta de crédito
+            <input type="radio" name="metodo_pago" value="bizum" />Bizum
+          </div>
+          <div class="form_div">
+            <h4>Información de la tarjeta</h4>
+            <input
+              type="number"
+              name="numero_tarjeta"
+              placeholder="Número de tarjeta"
+            />
+            <input
+              type="date"
+              name="fecha_expiracion"
+              placeholder="Fecha de expiración"
+            />
+            <input type="number" name="cvc" placeholder="CVC" />
+          </div>
+          <div class="form_div">
+            <h4>Dirección de envío</h4>
+            <input type="text" name="poblacion" placeholder="Población" />
+            <input
+              type="number"
+              name="codigo_postal"
+              placeholder="Código postal"
+            />
+            <input type="text" name="pais" placeholder="País" />
+          </div>
+          <div id="comentarios">
+            <h4>Comentarios o peticiones especiales</h4>
+            <textarea
+              name="comentarios"
+              placeholder="Comentarios o peticiones especiales"
+            ></textarea>
+            <input type="checkbox" name="terminos_condiciones" value="1" />
+            <label for="terminos_condiciones"
+              >He leído y acepto los términos y condiciones y la política de
+              privacidad</label
+            >
+            <input type="submit" value="Enviar" />
+          </div>
+        </form>
       </div>
     </main>
-    <footer>
-      <nav class="nav_out">
-        <ul>
-          <li><a href="#"> Aviso legal </a></li>
-          <li><a class="sans-serif" href="#"> Política de privacidad </a></li>
-          <li><a class="sans-serif" href="#"> Política de cookies </a></li>
-        </ul>
-      </nav>
-      <p>
-        2023 © Jose Ramos Masip. Foto creada por
-        <a href="https://www.midjourney.com/home">Midjurney</a>
-      </p>
+    <br /><br />
+    <footer class="footer_purple">
+      <div>
+        <nav>
+          <ul>
+            <li><a href="#"> Aviso legal </a></li>
+            <li><a class="sans-serif" href="#"> Política de privacidad </a></li>
+            <li><a class="sans-serif" href="#"> Política de cookies </a></li>
+          </ul>
+        </nav>
+        <p>2023 © Jose Ramos Masip.</p>
+      </div>
     </footer>
   </body>
 </html>

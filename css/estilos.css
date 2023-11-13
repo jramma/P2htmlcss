@@ -94,6 +94,11 @@ html {
 }
 
 /* Cuerpo */
+#calendar_title{
+  margin-bottom: 0;
+}
+
+
 #home img {
   max-width: 40%;
 }
@@ -268,6 +273,42 @@ p{
   padding: 0.5rem;
 }
 .head{
-  border-top: 1px solid #070e58;
-  border-bottom: 1px solid #070e58 ;
+  border-top: 1px solid #5865f2;
+  border-bottom: 1px solid #5865f2 ;
+}
+#title_calendar{
+  border-top: 1px solid #5865f2;
+  padding: 1rem;
+  margin-left: 0;
+}
+#bottom_calendar{
+  border-bottom: 1px solid #5865f2;
+  padding: 0.3rem;
+
+}
+
+/* Form ####################################### */
+form {
+  text-align: left;
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+.form_div{
+  background-color: #5865f294;
 }
