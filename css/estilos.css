@@ -300,7 +300,9 @@ input, textarea {
 }
 form h4{
   margin-left: 1rem;
-}
+ }
+/* Margen arriba, margen derecho, margen abajo, margen izquierdo */
+
 input[type="submit"] {
   background-color: #000;
   color: #fff;
@@ -308,11 +310,14 @@ input[type="submit"] {
   cursor: pointer;
 }
 .form_div1{
-  background-color: #5865f294;
+  background-color: #5865f251;
+  padding-bottom: 1rem;
+  border-radius: 0.5rem;
 }
 .flex{
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-left: 1rem;
   margin-right: 0;
+  margin-bottom: 2rem;
 }
