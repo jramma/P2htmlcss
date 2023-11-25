@@ -237,7 +237,9 @@ footer a:hover {
 /* GENERAL */
 
 a:hover {
-  color: #a4f479;
+  border-bottom: solid;
+  border-color: #a4f479;
+  border-width: 1px;
 }
 
 a {
@@ -354,6 +356,8 @@ p {
   border-bottom: dotted;
   border-width: 1px;
 }
+
+
 
 
 /* Form ####################################### */
