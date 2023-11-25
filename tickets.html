@@ -56,32 +56,136 @@
           <div class="flex">
             <div class="row">
               <div class="input">
-                <p>Nombre: *</p>
-                <input type="text" name="nombre" placeholder="Nombre" />
+                <label for="nombre">Nombre: <span class="red">*</span></label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required />
               </div>
               <div class="input">
-                <p>Correo Electrónico: *</p>
-                <input type="text" name="mail" placeholder="E-mail" />
+                <label for="mail">Correo Electrónico: <span class="red">*</span></label>
+                <input type="text" id="mail" name="mail" placeholder="E-mail" required />
               </div>
               <div class="input">
-                <p>Fecha de Nacimiento: *</p>
-                <input type="date" name="fecha_nacimiento" placeholder="Fecha de nacimiento" />
+                <label for="fecha_nacimiento">Fecha de Nacimiento: <span class="red">*</span></label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" placeholder="Fecha de nacimiento"
+                  required />
               </div>
             </div>
             <div class="row">
               <div class="input">
-                <p>Apellidos: *</p>
-                <input type="text" name="apellidos" placeholder="Apellidos" />
+                <label for="apellidos">Apellidos: <span class="red">*</span></label>
+                <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required />
               </div>
               <div class="input">
-                <p>Teléfono:</p>
-                <input type="tel" name="phone" placeholder="Teléfono de contacto" />
+                <label for="phone">Teléfono:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Teléfono de contacto" />
               </div>
             </div>
           </div>
         </div>
+        <div class="form_div">
+          <h4>Tipo de Entrada</h4>
+          <div class="content_form">
+            <p>Elige el tipo de entrada que prefieres para tu experiencia en el Amped Festival. Cada opción ha sido
+              diseñada para proporcionarte el mejor acceso y comodidades durante el evento. </p>
+            <div class="input">
+              <label for="entradas">Selecciona tu tipo de entrada:</label>
+              <select id="entradas" name="entradas" required>
+                <option value="entrada_general">Entrada General - 50€</option>
+                <option value="entrada_vip">Entrada VIP - 150€ (incluye acceso backstage y zona preferencial)</option>
+                <option value="pase_dos_dias">Pase de dos Días - 120€</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="form_div">
+          <h4>Método de pago</h4>
+          <div class="content_form">
+            <p>Elige el tipo de entrada que prefieres para tu experiencia en el Amped Festival. Cada opción ha sido
+              diseñada para proporcionarte el mejor acceso y comodidades durante el evento. </p>
+            <div class="payment-method">
+              <input type="radio" id="paypal" name="payment" value="paypal" />
+              <label for="paypal">
+                <div class="dot"></div>
+                Paypal
+              </label>
+            </div>
 
-      </form>
+            <div class="payment-method">
+              <input type="radio" id="tarjeta" name="payment" value="tarjeta" />
+              <label for="tarjeta">
+                <div class="dot"></div>
+                Tarjeta de crédito
+              </label>
+            </div>
+
+            <div class="payment-method">
+              <input type="radio" id="bizum" name="payment" value="bizum" />
+              <label for="bizum">
+                <div class="dot"></div>
+                Bizum
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="form_div">
+          <h4>Información de Tarjeta</h4>
+          <div class="content_form">
+            <div class="flex1">
+              <div class="input">
+                <label for="cred"> Número de tarjeta de crédito/débito
+                  :</label>
+                <input type="text" id="cred" name="cred" placeholder="123412341234134" required />
+              </div>
+              <div class="input">
+                <label for="exdate">Fecha de Expiración: <span class="red">*</span></label>
+                <input type="text" id="text" name="mail" placeholder="" required />
+              </div>
+              <div class="input">
+                <label for="cvc">CVC: <span class="red">*</span></label>
+                <input type="text" id="cvc" name="fecha_nacimiento" placeholder="123" required />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form_div">
+          <h4>Dirección de envío
+          </h4>
+          <div class="content_form">
+
+            <div class="input">
+              <label for="dir">Dirección: <span class="red">*</span>
+                </label>
+              <input type="text" id="cred" name="cred" placeholder="123412341234134" required />
+            </div>
+            <div class="flex2">
+              <div class="input">
+                <label for="cred"> Población: <span class="red">*</span>
+                  </label>
+                <input type="text" id="cred" name="cred" placeholder="123412341234134" required />
+              </div>
+              <div class="input">
+                <label for="exdate">Código postal: <span class="red">*</span></label>
+                <input type="text" id="text" name="mail" placeholder="" required />
+              </div>
+              <div class="input">
+                <label for="cvc">País </label>
+                <input type="text" id="cvc" name="fecha_nacimiento" placeholder="123" required />
+              </div>
+            </div>
+          </div>
+        </div>
+    <div class="pie_form">
+      <p><b>Comentarios o peticiones especiales</b></p>
+      <input type="box" class="box-input" />
+      <div class="payment-method">
+        <input type="checkbox" id="privacy" name="privacy" value="privacy" />
+        <label for="privacy">
+          He leído y acepto los <a>términos y condiciones</a> y la <a>política de privacidad</a>.
+        </label>
+      </div>
+    </div>
+    <button id="comprar" type="submit">Comprar entrada</button>
+  </form>
+
     </div>
   </main>
   <br /><br />
