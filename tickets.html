@@ -20,7 +20,8 @@
     <div>
       <nav class="nav_on">
         <div id="purple_nav">
-          <img id="logo" src="img/logo.svg" />
+          <a href="index.html">
+            <img id="logo" src="img/logo.svg" /></a>
           <div id="center">
             <ul>
               <li><a href="info.html"> Información </a></li>
@@ -97,10 +98,8 @@
           </div>
         </div>
         <div class="form_div">
-          <h4>Método de pago</h4>
+          <h4>Método de pago</h4><br />
           <div class="content_form">
-            <p>Elige el tipo de entrada que prefieres para tu experiencia en el Amped Festival. Cada opción ha sido
-              diseñada para proporcionarte el mejor acceso y comodidades durante el evento. </p>
             <div class="payment-method">
               <input type="radio" id="paypal" name="payment" value="paypal" />
               <label for="paypal">
@@ -136,11 +135,11 @@
                 <input type="text" id="cred" name="cred" placeholder="123412341234134" required />
               </div>
               <div class="input">
-                <label for="exdate">Fecha de Expiración: <span class="red">*</span></label>
+                <label for="exdate">Fecha de Expiración:</label>
                 <input type="text" id="text" name="mail" placeholder="" required />
               </div>
               <div class="input">
-                <label for="cvc">CVC: <span class="red">*</span></label>
+                <label for="cvc">CVC:</label>
                 <input type="text" id="cvc" name="fecha_nacimiento" placeholder="123" required />
               </div>
             </div>
@@ -153,38 +152,43 @@
 
             <div class="input">
               <label for="dir">Dirección: <span class="red">*</span>
-                </label>
-              <input type="text" id="cred" name="cred" placeholder="123412341234134" required />
+              </label>
+              <input type="text" id="dir" name="dir" placeholder="Dirección" required />
             </div>
             <div class="flex2">
               <div class="input">
                 <label for="cred"> Población: <span class="red">*</span>
-                  </label>
-                <input type="text" id="cred" name="cred" placeholder="123412341234134" required />
+                </label>
+                <input type="text" id="pob" name="pob" placeholder="Población" required />
               </div>
               <div class="input">
-                <label for="exdate">Código postal: <span class="red">*</span></label>
-                <input type="text" id="text" name="mail" placeholder="" required />
+                <label for="cp">Código postal: <span class="red">*</span></label>
+                <input type="text" id="cp" name="cp" placeholder="C.Postal" required />
               </div>
               <div class="input">
-                <label for="cvc">País </label>
-                <input type="text" id="cvc" name="fecha_nacimiento" placeholder="123" required />
+                <label for="ctry">País </label>
+                <select id="ctry" name="ctry" required>
+                  <option value="entrada_general">España</option>
+                  <option value="entrada_vip">País 1</option>
+                  <option value="pase_dos_dias">País 2</option>
+                </select>
               </div>
             </div>
           </div>
         </div>
-    <div class="pie_form">
-      <p><b>Comentarios o peticiones especiales</b></p>
-      <input type="box" class="box-input" />
-      <div class="payment-method">
-        <input type="checkbox" id="privacy" name="privacy" value="privacy" />
-        <label for="privacy">
-          He leído y acepto los <a>términos y condiciones</a> y la <a>política de privacidad</a>.
-        </label>
-      </div>
-    </div>
-    <button id="comprar" type="submit">Comprar entrada</button>
-  </form>
+        <div class="pie_form">
+          <p><b>Comentarios o Peticiones Especiales</b></p>
+          <textarea type="box" class="box-input"></textarea>
+
+          <div class="payment-method">
+            <input type="checkbox" id="privacy" name="privacy" value="privacy" />
+            <label for="privacy">
+              He leído y acepto los <a href="#">términos y condiciones</a> y la <a href="#">política de privacidad</a>.
+            </label>
+          </div>
+        </div>
+        <button id="comprar" type="submit">Comprar entrada</button>
+      </form>
 
     </div>
   </main>

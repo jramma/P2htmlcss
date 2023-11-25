@@ -1,172 +1,286 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <link rel="icon" type="image/png" src="../img/favicon-32x32.png" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calendario</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <!-- google font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,500;0,700;0,900;1,300;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/estilos.css" />
-  </head>
 
-  <body>
-    <header>
-      <div>
-        <nav class="nav_on">
-          <div id="purple_nav">
-            <img id="logo" src="img/logo.svg" />
-            <div id="center">
-              <ul>
-                <li><a href="info.html"> Información </a></li>
-                <li>
-                  <a class="sans-serif" id="whoami" href="calendario.html">
-                    Calendario
-                  </a>
-                </li>
-                <li>
-                  <a class="sans-serif" href="tickets.html"> Entradas </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <main class="cuerpo contenedor">
-      <div class="item">
-        <h2 id="calendar_title">Calendario de conciertos</h2>
-        <p class="intro_info">
-          El Amped Festival no es sólo sobre la música, es sobre la experiencia.
-          Con dos días llenos de actuaciones increíbles, queremos que estés bien
-          preparado. Aquí tienes el calendario completo para que no te pierdas
-          de ninguno de tus artistas favoritos.
-        </p>
-      </div>
-      <div class="item">
-        <div id="calendario">
-          <h4 id="title_calendar">Explora las actuaciones y planifica tu experiencia musical</h4>
+<head>
+  <link rel="icon" type="image/png" src="../img/favicon-32x32.png" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calendario</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,500;0,700;0,900;1,300;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
 
-          <div class="cuadricula">
-            <div class="columna">
-              <div class="item head">
-                <p><b>Fecha</b></p>
-              </div>
-              <div class="item green"><p>22/06/2024</p></div>
-              <div class="item"><p>22/06/2024</p></div>
-              <div class="item green"><p>22/06/2024</p></div>
-              <div class="item"><p>22/06/2024</p></div>
-              <div class="item green"><p>23/06/2024</p></div>
-              <div class="item"><p>23/06/2024</p></div>
-              <div class="item green"><p>23/06/2024</p></div>
-              <div class="item"><p>23/06/2024</p></div>
-
-            </div>
-            <div class="columna">
-              <div class="item head">
-                <p><b>Hora</b></p>
-              </div>
-              <div class="item green"><p>19:00</p></div>
-              <div class="item"><p>20:30</p></div>
-              <div class="item green"><p>22:00</p></div>
-              <div class="item"><p>23:30</p></div>
-              <div class="item green"><p>18:00</p></div>
-              <div class="item"><p>19:30</p></div>
-              <div class="item green"><p>21:00</p></div>
-              <div class="item"><p>22:15</p></div>
-            </div>
-            <div class="columna">
-              <div class="item head">
-                <p><b>Artista</b></p>
-              </div>
-              <div class="item green"><p>Los Rayos</p></div>
-              <div class="item"><p>Rayos</p></div>
-              <div class="item green"><p>Rayos</p></div>
-              <div class="item"><p>Rayos</p></div>
-              <div class="item green"><p>Rayos</p></div>
-              <div class="item"><p>Rayos</p></div>
-              <div class="item green"><p>Rayos</p></div>
-              <div class="item"><p>Rayos</p></div>
-            </div>
-            <div class="columna">
-              <div class="item head">
-                <p><b>Escenario</b></p>
-              </div>
-              <div class="item green"><p>Los Rayos</p></div>
-              <div class="item"><p>Rayos</p></div>
-              <div class="item green"><p>Rayos</p></div>
-              <div class="item"><p>Rayos</p></div>
-              <div class="item green"><p>Rayos</p></div>
-              <div class="item"><p>Rayos</p></div>
-              <div class="item green"><p>Rayos</p></div>
-              <div class="item"><p>Rayos</p></div>
-            </div>
-            <div class="columna">
-              <div class="item head">
-                <p><b>Género Músical</b></p>
-              </div>
-              <div class="item green"><p>Los Rayos</p></div>
-              <div class="item"><p>Rayos</p></div>
-              <div class="item green"><p>Rayos</p></div>
-              <div class="item"><p>Rayos</p></div>
-              <div class="item green"><p>Rayos</p></div>
-              <div class="item"><p>Rayos</p></div>
-              <div class="item green"><p>Rayos</p></div>
-              <div class="item"><p>Rayos</p></div>
-            </div>
-            <div class="columna">
-              <div class="item head">
-                <p><b>Duración</b></p>
-              </div>
-              <div class="item green"><p>Los Rayos</p></div>
-              <div class="item"><p>Rayos</p></div>
-              <div class="item green"><p>Rayos</p></div>
-              <div class="item"><p>Rayos</p></div>
-              <div class="item green"><p>Rayos</p></div>
-              <div class="item"><p>Rayos</p></div>
-              <div class="item green"><p>Rayos</p></div>
-              <div class="item"><p>Rayos</p></div>
-            </div>
-            <div class="columna">
-              <div class="item head">
-                <p><b>Enlace</b></p>
-              </div>
-              <div class="item green"><p><a>Los Rayos</a></p></div>
-              <div class="item"><p><a>Rayos</a></p></div>
-              <div class="item green"><p><a>Rayos</a></p></div>
-              <div class="item"><p><a>Rayos</a></p></div>
-              <div class="item green"><p><a>Rayos</a></p></div>
-              <div class="item"><p><a>Rayos</a></p></div>
-              <div class="item green"><p><a>Rayos</a></p></div>
-              <div class="item"><p><a>Rayos</a></p></div>
-            </div>
-          </div>
-          <div id="postfoto">
-            <p id="bottom_calendar">
-              * Los horarios pueden estar sujetos a cambios. Para obtener la
-              información más actualizada suscríbete a nuestras notificaciones.
-            </p>
+<body>
+  <header>
+    <div>
+      <nav class="nav_on">
+        <div id="purple_nav">
+          <a href="index.html">
+            <img id="logo" src="img/logo.svg" /></a>
+          <div id="center">
+            <ul>
+              <li><a href="info.html"> Información </a></li>
+              <li>
+                <a class="sans-serif" id="whoami" href="calendario.html">
+                  Calendario
+                </a>
+              </li>
+              <li>
+                <a class="sans-serif" href="tickets.html"> Entradas </a>
+              </li>
+            </ul>
           </div>
         </div>
+      </nav>
+    </div>
+  </header>
+  <main class="cuerpo contenedor">
+    <div class="item">
+      <h2 id="calendar_title">Calendario de conciertos</h2>
+      <p class="intro_info">
+        El Amped Festival no es sólo sobre la música, es sobre la experiencia.
+        Con dos días llenos de actuaciones increíbles, queremos que estés bien
+        preparado. Aquí tienes el calendario completo para que no te pierdas
+        de ninguno de tus artistas favoritos.
+      </p>
+    </div>
+    <div class="item">
+      <div id="calendario">
+        <h4 id="title_calendar">Explora las actuaciones y planifica tu experiencia musical</h4>
+
+        <div class="cuadricula">
+          <div class="columna">
+            <div class="item head">
+              <p><b>Fecha</b></p>
+            </div>
+            <div class="item green">
+              <p>22/06/2024</p>
+            </div>
+            <div class="item">
+              <p>22/06/2024</p>
+            </div>
+            <div class="item green">
+              <p>22/06/2024</p>
+            </div>
+            <div class="item">
+              <p>22/06/2024</p>
+            </div>
+            <div class="item green">
+              <p>23/06/2024</p>
+            </div>
+            <div class="item">
+              <p>23/06/2024</p>
+            </div>
+            <div class="item green">
+              <p>23/06/2024</p>
+            </div>
+            <div class="item">
+              <p>23/06/2024</p>
+            </div>
+
+          </div>
+          <div class="columna">
+            <div class="item head">
+              <p><b>Hora</b></p>
+            </div>
+            <div class="item green">
+              <p>19:00</p>
+            </div>
+            <div class="item">
+              <p>20:30</p>
+            </div>
+            <div class="item green">
+              <p>22:00</p>
+            </div>
+            <div class="item">
+              <p>23:30</p>
+            </div>
+            <div class="item green">
+              <p>18:00</p>
+            </div>
+            <div class="item">
+              <p>19:30</p>
+            </div>
+            <div class="item green">
+              <p>21:00</p>
+            </div>
+            <div class="item">
+              <p>22:15</p>
+            </div>
+          </div>
+          <div class="columna">
+            <div class="item head">
+              <p><b>Artista</b></p>
+            </div>
+            <div class="item green">
+              <p>Los Rayos</p>
+            </div>
+            <div class="item">
+              <p>Sirenas Eléctricas</p>
+            </div>
+            <div class="item green">
+              <p>The Echoes</p>
+            </div>
+            <div class="item">
+              <p>Nocturnal Whisper</p>
+            </div>
+            <div class="item green">
+              <p>Voltage</p>
+            </div>
+            <div class="item">
+              <p>StrumLords</p>
+            </div>
+            <div class="item green">
+              <p>Guitar Glare</p>
+            </div>
+            <div class="item">
+              <p>Silent Scream</p>
+            </div>
+          </div>
+          <div class="columna">
+            <div class="item head">
+              <p><b>Escenario</b></p>
+            </div>
+            <div class="item green">
+              <p>Principal</p>
+            </div>
+            <div class="item">
+              <p>Secundario</p>
+            </div>
+            <div class="item green">
+              <p>Principal</p>
+            </div>
+            <div class="item">
+              <p>Secundario</p>
+            </div>
+            <div class="item green">
+              <p>Principal</p>
+            </div>
+            <div class="item">
+              <p>Secundario</p>
+            </div>
+            <div class="item green">
+              <p>Principal</p>
+            </div>
+            <div class="item">
+              <p>Secundario</p>
+            </div>
+          </div>
+          <div class="columna">
+            <div class="item head">
+              <p><b>Género Músical</b></p>
+            </div>
+            <div class="item green">
+              <p>Hard Rock</p>
+            </div>
+            <div class="item">
+              <p>Punk Rock</p>
+            </div>
+            <div class="item green">
+              <p>Classic Rock</p>
+            </div>
+            <div class="item">
+              <p>Gothic Rock</p>
+            </div>
+            <div class="item green">
+              <p>Metal</p>
+            </div>
+            <div class="item">
+              <p>Indie Rock</p>
+            </div>
+            <div class="item green">
+              <p>Rock 'n' Roll</p>
+            </div>
+            <div class="item">
+              <p>Hard Rock</p>
+            </div>
+          </div>
+          <div class="columna">
+            <div class="item head">
+              <p><b>Duración</b></p>
+            </div>
+            <div class="item green">
+              <p>60 min</p>
+            </div>
+            <div class="item">
+              <p>60 min</p>
+            </div>
+            <div class="item green">
+              <p>60 min</p>
+            </div>
+            <div class="item">
+              <p>60 min</p>
+            </div>
+            <div class="item green">
+              <p>60 min</p>
+            </div>
+            <div class="item">
+              <p>60 min</p>
+            </div>
+            <div class="item green">
+              <p>60 min</p>
+            </div>
+            <div class="item">
+              <p>60 min</p>
+            </div>
+          </div>
+          <div class="columna">
+            <div class="item head">
+              <p><b>Enlace</b></p>
+            </div>
+            <div class="item green">
+              <p><a href="#">Info</a></p>
+            </div>
+            <div class="item">
+              <p><a href="#">Info</a></p>
+            </div>
+            <div class="item green">
+              <p><a href="#">Info</a></p>
+            </div>
+            <div class="item">
+              <p><a href="#">Info</a></p>
+            </div>
+            <div class="item green">
+              <p><a href="#">Info</a></p>
+            </div>
+            <div class="item">
+              <p><a href="#">Info</a></p>
+            </div>
+            <div class="item green">
+              <p><a href="#">Info</a></p>
+            </div>
+            <div class="item">
+              <p><a href="#">Info</a></p>
+            </div>
+          </div>
+        </div>
+        <div id="postfoto">
+          <p id="bottom_calendar">
+            * Los horarios pueden estar sujetos a cambios. Para obtener la
+            información más actualizada suscríbete a nuestras notificaciones.
+          </p>
+        </div>
       </div>
-    </main>
-    <br /><br />
-    <footer class="footer_purple">
-      <div>
-        <nav>
-          <ul>
-            <li><a href="#"> Aviso legal </a></li>
-            <li><a class="sans-serif" href="#"> Política de privacidad </a></li>
-            <li><a class="sans-serif" href="#"> Política de cookies </a></li>
-          </ul>
-        </nav>
-        <p>2023 © Jose Ramos Masip.</p>
-      </div>
-    </footer>
-  </body>
+    </div>
+  </main>
+  <br />
+  <footer class="footer_purple">
+    <div>
+      <nav>
+        <ul>
+          <li><a href="#"> Aviso legal </a></li>
+          <li><a class="sans-serif" href="#"> Política de privacidad </a></li>
+          <li><a class="sans-serif" href="#"> Política de cookies </a></li>
+        </ul>
+      </nav>
+      <p>2023 © Jose Ramos Masip.</p>
+    </div>
+  </footer>
+</body>
+
 </html>

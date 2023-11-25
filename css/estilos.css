@@ -39,8 +39,11 @@ html {
 
 .nav_in a {
   text-transform: uppercase;
-  padding: 10px 20px;
-  margin: 1rem;
+  margin: 0.5rem;
+  font-size: 1.3rem;
+}
+.nav_in a:hover{
+  color: #a4f479;
 }
 
 .nav_on {
@@ -137,7 +140,9 @@ html {
 }
 
 /* Pie de página */
-
+#index_footer p{
+  text-align: center;
+}
 .nav_out ul {
   list-style: none;
   padding: 0;
@@ -183,12 +188,14 @@ html {
 .footer_purple p{
   font-size: 0.6rem;
 }
-
+footer a:hover{
+  color: #5865f2;
+}
 
 /* GENERAL */
 
 a:hover {
-  color: #5865f2;
+  color: #a4f479;
 }
 a {
   text-decoration: none;
@@ -235,6 +242,7 @@ h3 {
   text-align: center;
   font-weight: 700;
   font-size: 2rem;
+  margin:0;
 }
 h4 {
   font-size: 1.2rem;
@@ -286,6 +294,11 @@ p{
   padding: 0.3rem;
 
 }
+.columna a{
+  border-bottom: dotted;
+  border-width: 1px;
+}
+
 
 /* Form ####################################### */
 form {
@@ -316,11 +329,10 @@ form {
 
 form h4{
   margin-left: 1rem;
-  margin-top: -0.5rem;
+  margin-top: -0.7rem;
   position: absolute;
 
  }
-/* Margen arriba, margen derecho, margen abajo, margen izquierdo */
 .flex{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -366,11 +378,19 @@ form h4{
 .payment-method label{
   margin-left: 1rem;
 }
+select{
+  background-color: #fff;
+}
 .pie_form{
   color: #000;
 }
 .pie_form a{
-  color: blue;
+  color: #5865f2;
+  border-bottom: dotted;
+  border-width: 1px;
+}
+.pie_form a:hover{
+  color: #a4f479;
 }
 .box-input {
   width: 100%;
