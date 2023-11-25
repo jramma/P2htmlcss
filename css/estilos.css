@@ -293,21 +293,28 @@ form {
   width: 60%;
   display: inline-block;
 }
-
-input, textarea {
-  width: 80%;
-
+.input p{
+  margin: 1rem auto 0.5rem auto;
+  font-weight: 700;
 }
+.input input{
+  width: 92%;
+  height: 1rem;
+  border-width: 0;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+}
+
 form h4{
   margin-left: 1rem;
+  margin-top: -0.5rem;
+  position: absolute;
+
  }
 /* Margen arriba, margen derecho, margen abajo, margen izquierdo */
 
-input[type="submit"] {
-  background-color: #000;
-  color: #fff;
-  border: none;
-  cursor: pointer;
+.row{
+  margin-top: 1rem;
 }
 .form_div1{
   background-color: #5865f251;
@@ -317,7 +324,5 @@ input[type="submit"] {
 .flex{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-left: 1rem;
-  margin-right: 0;
-  margin-bottom: 2rem;
+  margin: 0 0 2rem 1rem;
 }
