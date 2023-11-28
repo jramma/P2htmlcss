@@ -264,11 +264,11 @@ body {
 }
 
 #box_video {
-  width: 560;
+  width: 560px;
   display: inline-block;
 }
 
-p {
+p{
   font-weight: 300;
   line-height: 1.5;
   font-size: 0.9rem;
