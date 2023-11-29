@@ -69,15 +69,14 @@ nav a:hover {
 
 .nav_on {
   text-align: center;
-  /* Centra el contenido del .nav_in horizontalmente */
   padding: 0rem;
 }
 
 #purple_nav {
   background-color: rgb(8, 14, 89, 0.7);
-  width: 30%;
+  width: 25rem;
   display: inline-block;
-  height: 80%;
+  height: 7rem;
   margin: 0.7rem;
 }
 
