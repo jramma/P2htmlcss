@@ -50,8 +50,9 @@ html {
   font-size: 1.3rem;
 }
 
-.nav_in a:hover {
+.nav_on a:hover {
   color: #a4f479;
+  border-width: 0;
 }
 
 .nav_on {
@@ -114,6 +115,7 @@ html {
 }
 
 /* Cuerpo */
+
 #calendar_title {
   margin-bottom: 0;
 }
@@ -195,7 +197,8 @@ h3 {
 }
 
 #a_foot:hover {
-  color: #5865f2;
+  color: #a4f479;
+  border-width: 0;
 }
 
 #foot_p {
@@ -231,17 +234,11 @@ h3 {
 }
 
 footer a:hover {
-  color: #5865f2;
+  color: #a4f479;
+  border-width: 0;
 }
 
 /* GENERAL */
-
-a:hover {
-  border-bottom: solid;
-  border-color: #a4f479;
-  border-width: 1px;
-}
-
 a {
   text-decoration: none;
   color: #fff;
@@ -268,7 +265,7 @@ body {
   display: inline-block;
 }
 
-p{
+p {
   font-weight: 300;
   line-height: 1.5;
   font-size: 0.9rem;
@@ -285,16 +282,12 @@ p{
   padding: 0;
 }
 
-
-
 h2 {
   text-align: center;
   font-weight: 700;
   font-size: 2rem;
   margin: 0;
 }
-
-
 
 .content {
   width: 70%;
@@ -356,9 +349,6 @@ p {
   border-bottom: dotted;
   border-width: 1px;
 }
-
-
-
 
 /* Form ####################################### */
 form {
@@ -467,9 +457,12 @@ select {
   border-width: 1px;
 }
 
-.pie_form a:hover {
-  color: #a4f479;
+a:hover {
+  border-bottom: solid;
+  border-color: #a4f479;
+  border-width: 1px;
 }
+
 
 .box-input {
   width: 100%;
