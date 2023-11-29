@@ -1,10 +1,7 @@
 #home {
   background-image: url("../img/home-hero.jpg");
-  background-size: cover;
-  /* cover: que ocupe toda la pantalla */
+  background-size: 100rem; /* Fija el ancho de la imagen en 2000px */
   background-position: center top -16rem;
-  /* Desplaza la imagen 5 rem hacia arriba desde la parte superior */
-
   text-align: center;
 }
 
@@ -50,7 +47,7 @@ html {
   font-size: 1.3rem;
 }
 
-.nav_on a:hover {
+nav a:hover {
   color: #a4f479;
   border-width: 0;
 }
@@ -196,10 +193,7 @@ h3 {
   font-weight: bold;
 }
 
-#a_foot:hover {
-  color: #a4f479;
-  border-width: 0;
-}
+
 
 #foot_p {
   font-size: 0.9rem;
@@ -231,11 +225,6 @@ h3 {
 
 .footer_purple p {
   font-size: 0.6rem;
-}
-
-footer a:hover {
-  color: #a4f479;
-  border-width: 0;
 }
 
 /* GENERAL */
