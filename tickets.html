@@ -21,7 +21,7 @@
       <nav class="nav_on">
         <div id="purple_nav">
           <a href="index.html">
-            <img id="logo" src="img/logo.svg" alt="Logo"/></a>
+            <img id="logo" src="img/logo.svg" alt="Logo" /></a>
           <div id="center">
             <ul>
               <li><a href="info.html"> Información </a></li>
@@ -53,27 +53,33 @@
     <section class="item">
       <form action="submit.php" method="post">
         <div class="form_div1">
+          <!-- Información Personal ############################################## -->
           <h2>Información Personal</h2>
           <div class="flex">
             <div class="row">
               <div class="input">
-                <label for="nombre">Nombre: <span class="red">*</span></label>
-                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required />
+                <label for="nombre">Nombre: <span class="red required">*</span></label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" pattern="^[a-zA-Z'-]+$" minlength="3"
+                  maxlength="64" required
+                  title="Por favor, introduce un nombre válido (solo letras, apóstrofos y guiones)." />
               </div>
               <div class="input">
-                <label for="mail">Correo Electrónico: <span class="red">*</span></label>
-                <input type="text" id="mail" name="mail" placeholder="E-mail" required />
+                <label for="mail">Correo Electrónico: <span class="red required">*</span></label>
+                <input type="email" id="mail" name="mail" placeholder="E-mail" required
+                  title="Por favor, introduce una dirección de correo electrónico válida." />
               </div>
               <div class="input">
-                <label for="fecha_nacimiento">Fecha de Nacimiento: <span class="red">*</span></label>
-                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" placeholder="Fecha de nacimiento"
-                  required />
+                <label for="fecha_nacimiento">Fecha de Nacimiento: <span class="red required">*</span></label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required
+                  title="Por favor, selecciona una fecha de nacimiento." />
               </div>
             </div>
             <div class="row">
               <div class="input">
-                <label for="apellidos">Apellidos: <span class="red">*</span></label>
-                <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required />
+                <label for="apellidos">Apellidos: <span class="red required">*</span></label>
+                <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" pattern="^[a-zA-Z'-]+$"
+                  minlength="3" maxlength="128" required
+                  title="Por favor, introduce apellidos válidos (solo letras, apóstrofos y guiones)." />
               </div>
               <div class="input">
                 <label for="phone">Teléfono:</label>
@@ -83,13 +89,14 @@
           </div>
         </div>
         <div class="form_div">
+          <!-- Tipo de Entrada ############################################## -->
           <h2>Tipo de Entrada</h2>
           <div class="content_form">
             <p>Elige el tipo de entrada que prefieres para tu experiencia en el Amped Festival. Cada opción ha sido
               diseñada para proporcionarte el mejor acceso y comodidades durante el evento. </p>
             <div class="input">
               <label for="entradas">Selecciona tu tipo de entrada:</label>
-              <select id="entradas" name="entradas" required>
+              <select id="entradas" name="entradas">
                 <option value="entrada_general">Entrada General - 50€</option>
                 <option value="entrada_vip">Entrada VIP - 150€ (incluye acceso backstage y zona preferencial)</option>
                 <option value="pase_dos_dias">Pase de dos Días - 120€</option>
@@ -97,7 +104,9 @@
             </div>
           </div>
         </div>
+
         <div class="form_div">
+          <!-- Método de Pago ############################################## -->
           <h2>Método de pago</h2>
           <div class="content_form">
             <div class="payment-method">
@@ -125,44 +134,49 @@
             </div>
           </div>
         </div>
+
         <div class="form_div">
+          <!-- Información de Tarjeta ############################################## -->
           <h2>Información de Tarjeta</h2>
           <div class="content_form">
             <div class="flex1">
               <div class="input">
-                <label for="cred"> Número de tarjeta de crédito/débito
-                  :</label>
-                <input type="text" id="cred" name="cred" placeholder="123412341234134" required />
+                <label for="cred"> Número de tarjeta de crédito/débito:</label>
+                <input type="text" id="cred" name="cred" placeholder="123412341234134" pattern="\d{16}"
+                  title="Se requieren 16 digitos" />
               </div>
               <div class="input">
                 <label for="exdate">Fecha de Expiración:</label>
-                <input type="text" id="text" name="mail" placeholder="" required />
+                <input type="text" id="exdate" name="exdate" placeholder="MM/YY" pattern="\d{2}/\d{2}" />
               </div>
               <div class="input">
                 <label for="cvc">CVC:</label>
-                <input type="text" id="cvc" name="fecha_nacimiento" placeholder="123" required />
+                <input type="text" id="cvc" name="cvc" placeholder="123" pattern="\d{3}"
+                  title="El CVC tiene que ser de 3 dígitos" />
               </div>
             </div>
           </div>
         </div>
+
         <div class="form_div">
+          <!-- Dirección de Envío ############################################## -->
           <h2>Dirección de envío</h2>
           <div class="content_form">
-
             <div class="input">
-              <label for="dir">Dirección: <span class="red">*</span>
-              </label>
-              <input type="text" id="dir" name="dir" placeholder="Dirección" required />
+              <label for="dir">Dirección: <span class="red required">*</span></label>
+              <input type="text" id="dir" name="dir" placeholder="Dirección" required
+                title="Campo obligatorio, Dirección" />
             </div>
             <div class="flex2">
               <div class="input">
-                <label for="cred"> Población: <span class="red">*</span>
-                </label>
-                <input type="text" id="pob" name="pob" placeholder="Población" required />
+                <label for="pob"> Población: <span class="red required">*</span></label>
+                <input type="text" id="pob" name="pob" placeholder="Población" required
+                  title="Campo obligatorio, Población" />
               </div>
               <div class="input">
-                <label for="cp">Código postal: <span class="red">*</span></label>
-                <input type="text" id="cp" name="cp" placeholder="C.Postal" required />
+                <label for="cp">Código postal: <span class="red required">*</span></label>
+                <input type="text" id="cp" name="cp" placeholder="C.Postal" pattern="\d{5}" required
+                  title="Campo obligatorio, CP" />
               </div>
               <div class="input">
                 <label for="ctry">País </label>
@@ -175,17 +189,20 @@
             </div>
           </div>
         </div>
+
         <div class="pie_form">
+          <!-- Comentarios y Términos y Condiciones ############################################## -->
           <p><b>Comentarios o Peticiones Especiales</b></p>
           <textarea type="box" class="box-input"></textarea>
 
           <div class="payment-method">
-            <input type="checkbox" id="privacy" name="privacy" value="privacy" />
+            <input type="checkbox" id="privacy" name="privacy" value="privacy" required />
             <label for="privacy">
               He leído y acepto los <a href="#">términos y condiciones</a> y la <a href="#">política de privacidad</a>.
             </label>
           </div>
         </div>
+
         <button id="comprar" type="submit">Comprar entrada</button>
       </form>
 
@@ -201,7 +218,8 @@
         </ul>
       </nav>
       <p>
-        2023 © Jose Ramos Masip. Hecho con <abbr title="HyperText Markup Language">HTML</abbr> y <abbr title="Cascading Style Sheets">CSS</abbr>.
+        2023 © Jose Ramos Masip. Hecho con <abbr title="HyperText Markup Language">HTML</abbr> y <abbr
+          title="Cascading Style Sheets">CSS</abbr>.
       </p>
     </div>
   </footer>

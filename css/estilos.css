@@ -445,8 +445,14 @@ a:hover {
   margin-bottom: 1rem;
 }
 
+/* asterisco validación ####################################### */
+
 .red {
   color: red;
+}
+
+.red.required:valid {
+  color: green;
 }
 
 /* corrigiendo tamaños de h1, h2, h3... ####################################### */
