@@ -101,7 +101,6 @@ nav a:hover {
 }
 
 /* Cuerpo ###################################################*/
-
 #calendar_title {
   margin-bottom: 0;
 }
@@ -138,7 +137,6 @@ nav a:hover {
   text-align: left;
 
 }
-
 
 .left_line {
   margin-left: 4rem;
@@ -180,8 +178,6 @@ h3 {
   color: #a4f479;
   font-weight: bold;
 }
-
-
 
 #foot_p {
   font-size: 0.9rem;
