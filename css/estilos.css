@@ -444,7 +444,9 @@ a:hover {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-
+iframe {
+  border: none;
+}
 /* asterisco validación ####################################### */
 
 .red {

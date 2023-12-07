@@ -2,17 +2,17 @@
 <html lang="es">
 
 <head>
-  <link rel="icon" type="image/png" src="../img/favicon-32x32.png" />
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="img/favicon-32x32.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tickets</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <!-- google font -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,500;0,700;0,900;1,300;1,500;1,700;1,900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="css/estilos.css" />
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body id="tickets">
@@ -21,7 +21,7 @@
       <nav class="nav_on">
         <div id="purple_nav">
           <a href="index.html">
-            <img id="logo" src="img/logo.svg" alt="Logo" /></a>
+            <img id="logo" src="img/logo.svg" alt="Logo"></a>
           <div id="center">
             <ul>
               <li><a href="info.html"> Información </a></li>
@@ -61,17 +61,17 @@
                 <label for="nombre">Nombre: <span class="red required">*</span></label>
                 <input type="text" id="nombre" name="nombre" placeholder="Nombre" pattern="^[a-zA-Z'-]+$" minlength="3"
                   maxlength="64" required
-                  title="Por favor, introduce un nombre válido (solo letras, apóstrofos y guiones)." />
+                  title="Por favor, introduce un nombre válido (solo letras, apóstrofos y guiones).">
               </div>
               <div class="input">
                 <label for="mail">Correo Electrónico: <span class="red required">*</span></label>
                 <input type="email" id="mail" name="mail" placeholder="E-mail" required
-                  title="Por favor, introduce una dirección de correo electrónico válida." />
+                  title="Por favor, introduce una dirección de correo electrónico válida.">
               </div>
               <div class="input">
                 <label for="fecha_nacimiento">Fecha de Nacimiento: <span class="red required">*</span></label>
                 <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required
-                  title="Por favor, selecciona una fecha de nacimiento." />
+                  title="Por favor, selecciona una fecha de nacimiento.">
               </div>
             </div>
             <div class="row">
@@ -79,11 +79,11 @@
                 <label for="apellidos">Apellidos: <span class="red required">*</span></label>
                 <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" pattern="^[a-zA-Z'-]+$"
                   minlength="3" maxlength="128" required
-                  title="Por favor, introduce apellidos válidos (solo letras, apóstrofos y guiones)." />
+                  title="Por favor, introduce apellidos válidos (solo letras, apóstrofos y guiones).">
               </div>
               <div class="input">
                 <label for="phone">Teléfono:</label>
-                <input type="tel" id="phone" name="phone" placeholder="Teléfono de contacto" />
+                <input type="tel" id="phone" name="phone" placeholder="Teléfono de contacto">
               </div>
             </div>
           </div>
@@ -110,25 +110,22 @@
           <h2>Método de pago</h2>
           <div class="content_form">
             <div class="payment-method">
-              <input type="radio" id="paypal" name="payment" value="paypal" />
+              <input type="radio" id="paypal" name="payment" value="paypal">
               <label for="paypal">
-                <div class="dot"></div>
                 Paypal
               </label>
             </div>
 
             <div class="payment-method">
-              <input type="radio" id="tarjeta" name="payment" value="tarjeta" />
+              <input type="radio" id="tarjeta" name="payment" value="tarjeta">
               <label for="tarjeta">
-                <div class="dot"></div>
                 Tarjeta de crédito
               </label>
             </div>
 
             <div class="payment-method">
-              <input type="radio" id="bizum" name="payment" value="bizum" />
+              <input type="radio" id="bizum" name="payment" value="bizum">
               <label for="bizum">
-                <div class="dot"></div>
                 Bizum
               </label>
             </div>
@@ -143,16 +140,16 @@
               <div class="input">
                 <label for="cred"> Número de tarjeta de crédito/débito:</label>
                 <input type="text" id="cred" name="cred" placeholder="123412341234134" pattern="\d{16}"
-                  title="Se requieren 16 digitos" />
+                  title="Se requieren 16 digitos">
               </div>
               <div class="input">
                 <label for="exdate">Fecha de Expiración:</label>
-                <input type="text" id="exdate" name="exdate" placeholder="MM/YY" pattern="\d{2}/\d{2}" />
+                <input type="text" id="exdate" name="exdate" placeholder="MM/YY" pattern="\d{2}/\d{2}">
               </div>
               <div class="input">
                 <label for="cvc">CVC:</label>
                 <input type="text" id="cvc" name="cvc" placeholder="123" pattern="\d{3}"
-                  title="El CVC tiene que ser de 3 dígitos" />
+                  title="El CVC tiene que ser de 3 dígitos">
               </div>
             </div>
           </div>
@@ -165,25 +162,37 @@
             <div class="input">
               <label for="dir">Dirección: <span class="red required">*</span></label>
               <input type="text" id="dir" name="dir" placeholder="Dirección" required
-                title="Campo obligatorio, Dirección" />
+                title="Campo obligatorio, Dirección">
             </div>
             <div class="flex2">
               <div class="input">
                 <label for="pob"> Población: <span class="red required">*</span></label>
                 <input type="text" id="pob" name="pob" placeholder="Población" required
-                  title="Campo obligatorio, Población" />
+                  title="Campo obligatorio, Población">
               </div>
               <div class="input">
                 <label for="cp">Código postal: <span class="red required">*</span></label>
                 <input type="text" id="cp" name="cp" placeholder="C.Postal" pattern="\d{5}" required
-                  title="Campo obligatorio, CP" />
+                  title="Campo obligatorio, CP">
               </div>
               <div class="input">
                 <label for="ctry">País </label>
                 <select id="ctry" name="ctry" required>
-                  <option value="entrada_general">España</option>
-                  <option value="entrada_vip">País 1</option>
-                  <option value="pase_dos_dias">País 2</option>
+                  <option value="">Selecciona un país</option>
+                  <!-- ERROR AL VALIDAR si no dejaba un
+                     valor vacio: The first child option element 
+                     of a select element with a required attribute, 
+                     and without a multiple attribute, 
+                     and without a size attribute whose value 
+                     is greater than 1, must have either an 
+                     empty value attribute, or must have no 
+                     text content. Consider either adding a 
+                     placeholder option label, or adding a 
+                     size attribute with a value equal to the number
+                      of option elements. -->
+                  <option value="Spain">España</option>
+                  <option value="ctry1">País 1</option>
+                  <option value="ctry2">País 2</option>
                 </select>
               </div>
             </div>
@@ -193,10 +202,10 @@
         <div class="pie_form">
           <!-- Comentarios y Términos y Condiciones ############################################## -->
           <p><b>Comentarios o Peticiones Especiales</b></p>
-          <textarea type="box" class="box-input"></textarea>
+          <textarea class="box-input"></textarea>
 
           <div class="payment-method">
-            <input type="checkbox" id="privacy" name="privacy" value="privacy" required />
+            <input type="checkbox" id="privacy" name="privacy" value="privacy" required>
             <label for="privacy">
               He leído y acepto los <a href="#">términos y condiciones</a> y la <a href="#">política de privacidad</a>.
             </label>
